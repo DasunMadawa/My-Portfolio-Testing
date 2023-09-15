@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/lib/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_home.css">
@@ -49,7 +50,7 @@
         <button type="button">
             <a href="assets/img/harbormaster-front-ui.png" download>
                 Download CV
-                <img src="assets/img/icon/download-icon.png" alt="download icon">
+                <i class="fa-solid fa-download"></i>
             </a>
         </button>
         <div>
@@ -57,17 +58,17 @@
             <img src="assets/img/hero-section-photo-background.jpg" alt="background">
         </div>
 
-        <div>
-            <a href="https://github.com/DasunMadawa">
+        <div class="social-icons">
+            <a href="https://github.com/DasunMadawa" target="_blank">
                 <img src="assets/img/icon/github-icon.png" alt="github icon" title="github">
             </a>
-            <a href="https://www.linkedin.com/in/dasun-madawa-41255927b/">
+            <a href="https://www.linkedin.com/in/dasun-madawa-41255927b/" target="_blank">
                 <img src="assets/img/icon/linkedin-icon.png" alt="linkedin icon" title="linkedin">
             </a>
-            <a href="https://www.facebook.com/dasun.pabasara.104">
+            <a href="https://www.facebook.com/dasun.pabasara.104" target="_blank">
                 <img src="assets/img/icon/facebook-icon.png" alt="facebook icon" title="facebook">
             </a>
-            <a href="https://wa.me/+94716177681">
+            <a href="https://wa.me/+94716177681" target="_blank">
                 <img src="assets/img/icon/whatsapp-icon.png" alt="whatsapp icon" title="whatsapp">
             </a>
         </div>
@@ -76,7 +77,11 @@
 
     <!--        About Me        -->
     <section>
-        <img src="assets/img/about-me-image.jpg" alt="my image (about me sec)">
+        <div>
+            <div></div>
+            <div></div>
+            <!--            <img src="assets/img/about-me-image.jpg" alt="my image (about me sec)">-->
+        </div>
 
         <h3>About Me</h3>
         <div></div>
@@ -134,29 +139,39 @@
         <h3>Job Roles</h3>
 
         <div>
-            <img src="assets/img/icon/svg/full-stack-developer.svg" alt="full-stack developer icon">
+            <div>
+                <i class="fa-solid fa-code"></i>
+            </div>
             <p>Full-Stack Developer</p>
             <p>Develops both the front end and the back end.</p>
         </div>
 
         <div>
-            <img src="assets/img/icon/svg/back-end-developer.svg" alt="back-end developer icon">
+            <div>
+                <i class="fa-solid fa-database"></i>
+            </div>
             <p>Back-End Developer</p>
             <p>Develops the back end of the software.</p>
 
         </div>
         <div>
-            <img src="assets/img/icon/svg/front-end-developer.svg" alt="front-end developer icon">
+            <div>
+                <i class="fa-solid fa-window-restore"></i>
+            </div>
             <p>Front-End Developer</p>
             <p>Develops the front end of the software.</p>
         </div>
         <div>
-            <img src="assets/img/icon/svg/web-developer.svg" alt="web developer icon">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+            </div>
             <p>Web Developer</p>
             <p>Develops web sites.</p>
         </div>
         <div>
-            <img src="assets/img/icon/svg/qa.svg" alt="qa icon">
+            <div>
+                <i class="fa-solid fa-bug"></i>
+            </div>
             <p>QA</p>
             <p>Analyze bugs and errors.</p>
         </div>
@@ -165,42 +180,81 @@
     <!--        Recent Projects         -->
     <section>
         <h3>Recent Projects</h3>
-        <div>
+        <div class="project-card">
             <div>
-                <img src="assets/img/harbormaster-front-ui.png" alt="harbormaster front ui">
-                <p>
-                    PROJECT HARBORMASTER
-                </p>
-                <p>
-                    Manage works in a boat Harbor
-                </p>
-                <img src="assets/img/logo/harbormaster-logo.png" alt="harbormaster logo">
+                <div>
+                    <img src="assets/img/harbormaster-front-ui.png" alt="harbormaster front ui">
+                    <p>
+                        PROJECT HARBOURMASTER
+                    </p>
+                    <p>
+                        Manage works in a boat Harbor
+                    </p>
+                    <img src="assets/img/logo/harbormaster-logo.png" alt="harbormaster logo">
+                </div>
+                <div>
+                    <p>
+                        PROJECT HARBOURMASTER
+                    </p>
+                    <button>
+                        <a href="projectsAssignments.html" target="_blank">More Info...</a>
+                    </button>
+                </div>
             </div>
             <div>
-                <img src="assets/img/crime-tracker-front-ui.png" alt="crime tracker front ui">
-                <p>
-                    PROJECT <br> CRIME TRACKER
-                </p>
-                <p>
-                    Manage works in a Police
-                </p>
-                <img src="assets/img/logo/crime-tracker-logo.png" alt="crime tracker logo">
+                <div>
+                    <img src="assets/img/crime-tracker-front-ui.png" alt="crime tracker front ui">
+                    <p>
+                        PROJECT <br> CRIME TRACKER
+                    </p>
+                    <p>
+                        Manage works in a Police
+                    </p>
+                    <img src="assets/img/logo/crime-tracker-logo.png" alt="crime tracker logo">
+                </div>
             </div>
             <div>
-                <img src="" alt="">
-                <p>
-                    PROJECT <br> TEA COLLECTOR
-                </p>
-                <p>
-                    Manage tea collecting rates in a business
-                </p>
+                <div>
+                    <img src="assets/img/chat-box-front-ui.png" alt="chat box front ui">
+                    <p>
+                        CHAT BOX
+                    </p>
+                    <p>
+                        group chat application using <br> java socket programing
+                    </p>
+                    <img src="assets/img/logo/chat-box-logo.svg" alt="chat box logo">
+                </div>
+            </div>
 
-                <img src="" alt="">
-            </div>
+<!--            <div>-->
+<!--                -->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    PROJECT <br> CRIME TRACKER-->
+<!--                </p>-->
+<!--                <button>-->
+<!--                    <a href="projectsAssignments.html" target="_blank">More Info...</a>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <p>-->
+<!--                    CHAT BOX-->
+<!--                </p>-->
+<!--                <button>-->
+<!--                    <a href="projectsAssignments.html" target="_blank">More Info...</a>-->
+<!--                </button>-->
+<!--            </div>-->
         </div>
-<!--        <img src="assets/img/icon/svg/arrow-backward-icon.svg" alt="arrow backward icon">-->
-<!--        <img src="assets/img/icon/svg/arrow-forward-icon.svg" alt="arrow forward icon">-->
+        <!--        <img src="assets/img/icon/svg/arrow-backward-icon.svg" alt="arrow backward icon">-->
+        <!--        <img src="assets/img/icon/svg/arrow-forward-icon.svg" alt="arrow forward icon">-->
     </section>
+
+    <div class="up-btn">
+        <a href="#">
+            <i class="fa-regular fa-circle-up"></i>
+        </a>
+    </div>
 
 </main>
 
@@ -226,17 +280,17 @@
             </p>
         </div>
 
-        <div>
-            <a href="https://github.com/DasunMadawa">
+        <div class="social-icons">
+            <a href="https://github.com/DasunMadawa" target="_blank">
                 <img src="assets/img/icon/github-icon.png" alt="github icon" title="github">
             </a>
-            <a href="https://www.facebook.com/dasun.pabasara.104">
+            <a href="https://www.facebook.com/dasun.pabasara.104" target="_blank">
                 <img src="assets/img/icon/facebook-icon.png" alt="facebook icon" title="facebook">
             </a>
-            <a href="https://wa.me/+94716177681">
+            <a href="https://wa.me/+94716177681" target="_blank">
                 <img src="assets/img/icon/whatsapp-icon.png" alt="whatsapp icon" title="whatsapp">
             </a>
-            <a href="https://www.linkedin.com/in/dasun-madawa-41255927b/">
+            <a href="https://www.linkedin.com/in/dasun-madawa-41255927b/" target="_blank">
                 <img src="assets/img/icon/linkedin-icon.png" alt="linkedin icon" title="linkedin">
             </a>
         </div>
