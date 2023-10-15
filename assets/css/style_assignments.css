@@ -1,3 +1,8 @@
+#assignments {
+    color: #E85D04;
+    border-bottom: 3px solid #E85D04;
+}
+
 /* assignment card section */
 body > main > section {
     position: relative;
@@ -24,11 +29,11 @@ body > main > section > div:nth-child(2){
 
 /*assignment card style*/
 .assignment-card, .assignment-card-content{
-    perspective: 1000px;
+    /*perspective: 1000px;*/
     position: relative;
     width: 452px;
     height: 620px;
-    transition: 0.6s linear;
+    transition: 0.8s linear;
 
 }
 
@@ -66,6 +71,7 @@ body > main > section > div:nth-child(2){
 }
 
 .assignment-card-image {
+    transform: translateZ(50px);
     width: 452px;
     height: 302px;
     border-radius: 20px 20px 0 0;
@@ -80,12 +86,14 @@ body > main > section > div:nth-child(2){
 }
 
 .assignment-card-title {
+    transform: translateZ(100px);
     top: 371px;
     font-size: 32px;
     font-weight: 300;
 }
 
 .assignment-card-subtitle {
+    transform: translateZ(80px);
     top: 459px;
     color: white;
     font-size: 16px;
@@ -96,9 +104,11 @@ body > main > section > div:nth-child(2){
     width: 400px;
     border: 0;
     height: 2px;
-    background-image: -webkit-linear-gradient(left, #E85D04, #1C1C1C, #E85D04);
-    position: relative;
-    margin: 0;
+    background-image: -webkit-linear-gradient(left, #E85D04, #FFFFFF, #E85D04);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
 
 }
 
@@ -113,17 +123,17 @@ body > main > section > div:nth-child(2){
 }
 
 .hr-style-3 {
-    top: 336px;
+    top: 338px;
 
 }
 
 .hr-style-4 {
-    top: 404px;
+    top: 408px;
 
 }
 
 .hr-style-5 {
-    top: 472px;
+    top: 478px;
 
 }
 
@@ -134,17 +144,19 @@ body > main > section > div:nth-child(2){
     top: 60px;
     font-size: 32px;
     font-weight: 300;
-    color: #1C1C1C;
+    color: white;
     text-align: center;
+    transform: translateZ(80px);
 }
 
 .assignment-card-subtitle-back {
     position: absolute;
     font-size: 24px;
     font-weight: 200;
-    color: #1C1C1C;
+    color: white;
     text-align: center;
     left: 30px;
+    transform: translateZ(100px);
 }
 
 .assignment-card-subtitle-back-1 {
@@ -176,11 +188,24 @@ body > main > section > div:nth-child(2){
     width: 80px;
     height: 28px;
     border-radius: 8px;
-    border: 2px solid #1C1C1C;
-    color: #1C1C1C;
+    border: 2px solid white;
+    color: white;
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    transition-duration: 0.2s;
+    transform: translateZ(100px);
+}
+
+.assignment-card-btn-back:hover {
+    box-shadow: #FFFFFF 0px 0px 29px 0px;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    transform: translateY(-2px);
+}
+
+.assignment-card-btn-back:hover > a {
+    color: #1C1C1C;
 }
 
 .assignment-card-code-btn-back-1 {
@@ -253,7 +278,7 @@ body > main > section > div:nth-child(2){
     font-weight: 600;
     width: 100%;
     height: 100%;
-    color: #1C1C1C;
+    color: white;
     border-radius: 10px;
     box-sizing: border-box;
 }

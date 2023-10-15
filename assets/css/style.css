@@ -52,12 +52,14 @@ body > header > nav > a {
     font-size: 24px;
     font-weight: 500;
     margin-right: 1.875vw;
+    transition-duration: 0.2s;
+    /*border-bottom: 3px solid #040404;*/
 
 }
 
 body > header > nav > a:hover {
     color: #E85D04;
-
+    /*border-bottom: 3px solid #E85D04;*/
 }
 
 
@@ -351,11 +353,11 @@ body > footer > div:nth-child(2) > img {
 
 /*project card style*/
 .project-card, .card-content{
-    perspective: 1000px;
+    /*perspective: 1000px;*/
     position: relative;
     width: 452px;
     height: 620px;
-    transition: 0.6s linear;
+    transition: 0.8s linear;
 
 }
 
@@ -376,7 +378,7 @@ body > footer > div:nth-child(2) > img {
     position: absolute;
     width: 452px;
     height: 620px;
-    border-radius: 20px;
+    border-radius: 10px;
     transform-style: preserve-3d;
 
 }
@@ -393,9 +395,10 @@ body > footer > div:nth-child(2) > img {
 }
 
 .card-image {
+    transform: translateZ(50px);
     width: 452px;
     height: 240px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-title , .card-subtitle {
@@ -407,12 +410,14 @@ body > footer > div:nth-child(2) > img {
 }
 
 .card-title {
+    transform: translateZ(100px);
     top: 281px;
     font-size: 32px;
 }
 
 
 .card-subtitle {
+    transform: translateZ(80px);
     top: 399px;
     color: white;
     font-size: 16px;
@@ -426,6 +431,7 @@ body > footer > div:nth-child(2) > img {
     bottom: 35px;
     width: 133px;
     height: 126px;
+    transform: translateZ(70px);
 
 }
 
@@ -435,8 +441,9 @@ body > footer > div:nth-child(2) > img {
     right: 0;
     top: 240px;
     font-size: 32px;
-    color: #1C1C1C;
+    color: white;
     text-align: center;
+    transform: translateZ(80px);
 }
 
 .card-btn-back {
@@ -449,12 +456,35 @@ body > footer > div:nth-child(2) > img {
     height: 50px;
     font-size: 24px;
     border-radius: 10px;
-    border: 2px solid #1C1C1C;
-    color: #1C1C1C;
+    border: 2px solid white;
+    color: white;
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    transform: translateZ(100px);
+    transition-duration: 0.2s;
+
 }
+
+.card-btn-back:hover {
+    box-shadow: #FFFFFF 0px 0px 29px 0px;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    transform: translateY(-5px);
+}
+
+.card-btn-back:hover > a {
+    color: #1C1C1C;
+}
+
+/*.card-btn-back:hover {*/
+/*    color: #1C1C1C;*/
+/*    border-color: #1C1C1C;*/
+/*}*/
+
+/*.card-btn-back:hover > a {*/
+/*    color: #1C1C1C;*/
+/*}*/
 
 .card-btn-back > a {
     position: relative;
@@ -464,12 +494,54 @@ body > footer > div:nth-child(2) > img {
     justify-content: center;
     width: 100%;
     height: 100%;
-    color: #1C1C1C;
+    color: white;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
+.pre-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*background-color: transparent;*/
+    z-index: 10;
+}
+.pre-loader-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(40px);
+    transition-duration: 1.5s;
+}
 
+.pre-loader > div:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1/1;
+    background: url("/assets/img/logo/logo.png");
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition-duration: 1.5s;
+
+}
+
+@media all and (max-width: 1400px){
+    body > footer > div > div:nth-child(2) {
+        top: 150px;
+        left: 15vw;
+    }
+
+    body > footer > div > div:nth-child(4) {
+        top: 150px;
+        right: 8vw;
+    }
+
+}
 
 
 
